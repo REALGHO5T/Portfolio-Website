@@ -59,6 +59,8 @@
 // // smoothScroll()
 
 var arr = [
+  { image: "./assets/future.png"},
+  { image: "./assets/jewelry_website.png"},
   { image: "./assets/Eco Good.png"},
   { image: "./assets/FluidWeb.png"},
   { image: "./assets/Restaurant.png" },
