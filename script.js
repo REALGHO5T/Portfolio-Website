@@ -54,24 +54,19 @@ function PageAnimation() {
     delay: 0.4,
     ease: Power4,
   });
-  hl.from(".hero .text", {
-    y: 200,
+  hl.from(".hero-section #text1", {
+    x:-200,
     duration: 1,
-    stagger: 0.2,
-    delay: 0.4,
-    ease: "power3.out",
+    ease:"bounce",
     opacity: 0,
   });
-  hl.from(
-    ".masker",
-    {
-      width: "0%",
-      ease: Power4,
-      stagger: 0.2,
-      duration: 0.5,
-    },
-    "<"
-  );
+  hl.from(".hero-section #text2", {
+    x: 200,
+    duration: 1,
+    ease: "bounce",
+    opacity: 0,
+  },"<");
+
   let al = gsap.timeline({
     scrollTrigger: {
       trigger: ".about-section",
