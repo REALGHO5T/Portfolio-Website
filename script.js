@@ -34,9 +34,16 @@ const heroAnimation = () => {
     },
     "<"
   );
+ 
 
-  hl.from(".intro-left, .intro-right", {
-    y: 200,
+  gsap.from(".intro-left, .intro-right", {
+    scrollTrigger: {
+      trigger: ".intro-section",
+      start: "top 60%",
+      end: "bottom top",
+      scrub: false,
+    },
+    y: 50,
     opacity: 0,
     duration: 1,
     ease: "power4",

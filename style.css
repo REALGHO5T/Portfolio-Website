@@ -40,7 +40,11 @@ h1 {
 p{
   font-family: var(--montreal);
 }
-
+.mask{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 .img {
   height: 100%;
   width: 100%;
@@ -82,7 +86,7 @@ header {
 
 /* HERO SECTION */
 .hero-section {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   position: relative;
   padding-inline: var(--padding);
@@ -97,6 +101,7 @@ header {
       line-height: 6vw;
     }
   }
+  
 }
 
 /* INTRO SECTION */
