@@ -62,7 +62,7 @@ const projectAnimation = () => {
   });
 
   pl.from(".project-left, .project-right", {
-    y: 200,
+    y: 50,
     opacity: 0,
     duration: 1,
     ease: "power2.out",
@@ -78,7 +78,7 @@ const projectAnimation = () => {
         scrub: false,
         stagger: 0.3,
       },
-      y: 200,
+      y: 100,
       opacity: 0,
       duration: 1,
       ease: "power2.out",

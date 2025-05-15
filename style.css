@@ -54,7 +54,7 @@ p{
 .btn {
   background-color: #ffffff;
   color: black;
-  padding:7px 20px;
+  padding:8px 20px;
   border-radius: 35px;
   border: none;
   outline: none;
@@ -65,8 +65,8 @@ p{
   transition: background-color .1s ease, color .1s ease;
 }
 .btn:is(:hover, :focus, :active){
-  background-color: #167bff;
-  color: white;
+  background-color: #9999A1;
+  color: black;
   transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -181,7 +181,7 @@ footer {
   width: 100%;
   padding: var(--padding);
   margin-top: 10vh;
-  background-color: #181818;
+  background-color: #14110F;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
