@@ -36,17 +36,17 @@ const heroAnimation = () => {
   );
  
 
-  gsap.from(".intro-left, .intro-right", {
+  gsap.from(".intro-left h1, .intro-right p", {
     scrollTrigger: {
       trigger: ".intro-section",
-      start: "top 60%",
+      start: "top 80%",
       end: "bottom top",
       scrub: false,
     },
     y: 50,
     opacity: 0,
     duration: 1,
-    ease: "power4",
+    ease: "power3.out",
     stagger: 0.1,
   });
 };
@@ -61,7 +61,7 @@ const projectAnimation = () => {
     },
   });
 
-  pl.from(".project-left, .project-right", {
+  pl.from(".project-left h1, .project-right", {
     y: 50,
     opacity: 0,
     duration: 1,

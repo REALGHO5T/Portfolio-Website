@@ -41,7 +41,7 @@ p{
   font-family: var(--montreal);
 }
 .mask{
-  height: 100%;
+  height: inherit;
   width: 100%;
   overflow: hidden;
 }
@@ -114,13 +114,14 @@ header {
   justify-content: space-between;
 
   .intro-left {
-    width: 40%;
+    width: 30%;
     h1 {
       font-size: var(--headings);
     }
   }
   .intro-right {
-    width: 60%;
+    width: 70%;
+    
   }
 }
 
@@ -172,6 +173,7 @@ header {
   place-items: center;
 
   p {
+    font-weight: semibold;
     text-align: center;
     font-size: calc(var(--paragraph) * 1.5);
   }
