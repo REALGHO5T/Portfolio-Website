@@ -36,6 +36,8 @@ body {
 
 h1 {
   font-size: var(--main-heading);
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 p{
   font-family: var(--montreal);
@@ -55,19 +57,18 @@ p{
   background-color: #ffffff;
   color: black;
   padding:8px 16px;
-  /* border-radius: 35px; */
+  border-radius: 4px;
   border: none;
   outline: none;
   font-size: var(--paragraph);
-  font-family: "Base";
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   transition: background-color .1s ease, color .1s ease;
 }
 .btn:is(:hover, :focus, :active){
-  background-color: #9999A1;
+  background-color: #dbdbe3;
   color: black;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* HEADER SECTION */
@@ -78,10 +79,11 @@ header {
   align-items: center;
   padding: 10px var(--padding);
   position: relative;
-  background-color: var(--background);
+  background-color: #0f0e0fb5;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
+  backdrop-filter: blur(24px);
 }
 
 /* HERO SECTION */
@@ -98,8 +100,7 @@ header {
 
     h1 {
       font-size: 8vw;
-      font-weight: 700;
-      line-height: 7vw;
+      line-height: .9em;
     }
   }
   
@@ -146,7 +147,6 @@ header {
 
     .project {
       height: 90vh;
-      /* background-color: lightslategrey; */
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -158,6 +158,7 @@ header {
       }
       p {
         font-size: 1.2rem;
+        text-wrap: none;
       }
     }
   }
